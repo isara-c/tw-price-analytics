@@ -11,5 +11,9 @@
 # # Create a cursor from the connection
 # cursor = cnxn.cursor()
 
-with open('test-smc-app.py','w',encoding = 'utf-8') as f:
-   f.write("test-smc-app, done.")
+# with open('test-smc-app.py','w',encoding = 'utf-8') as f:
+#    f.write("test-smc-app, done.")
+
+def hello():
+    print("Handling request to home page.")
+    return "Hello, Azure!"

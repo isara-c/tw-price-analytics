@@ -14,6 +14,10 @@
 # with open('test-smc-app.py','w',encoding = 'utf-8') as f:
 #    f.write("test-smc-app, done.")
 
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
 def hello():
-    print("Handling request to home page.")
-    return "Hello, Azure!"
+    return "Hello, World!"
